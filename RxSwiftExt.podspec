@@ -20,13 +20,13 @@ Pod::Spec.new do |s|
   s.subspec "Core" do |cs|
     cs.source_files  = "Source/RxSwift", "Source/Tools"
     cs.frameworks  = "Foundation"
-    cs.dependency "RxSwift", :git => 'https://github.com/nusjeff/RxSwift.git'
+    cs.dependency "RxSwift", '5.1.1'
   end
 
   s.subspec "RxCocoa" do |co|
     co.source_files  = "Source/RxCocoa"
     co.frameworks  = "Foundation"
-    co.dependency "RxCocoa", :git => 'https://github.com/nusjeff/RxSwift.git'
+    co.dependency "RxCocoa", '5.1.1'
     co.dependency "RxSwiftExt/Core"
   end
 end
